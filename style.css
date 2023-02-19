@@ -1,82 +1,82 @@
-*{
+* {
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif
+  font-family: Arial, Helvetica, sans-serif;
 }
-body{
-  display:flex;
+body {
+  display: flex;
   justify-content: center;
 }
-.layout-spacing{
+.layout-spacing {
   width: 580px;
 }
-.wrapper{
+.wrapper {
   display: flex;
   justify-content: space-between;
 }
-.input-wrapper{
+.input-wrapper {
   width: 280px;
 }
-.input-wrapper__text{
+.input-wrapper__text {
   margin-bottom: 8px;
   font-weight: bold;
   color: #414141;
   font-size: 16px;
 }
-.input-wrapper__textbox{
+.input-wrapper__textbox {
   width: 100%;
   height: 50px;
-  border: solid 1px black;
+  border: solid 1px #414141;
   border-radius: 5px;
   background-color: transparent;
-  font-size:16px;
+  font-size: 16px;
   padding-left: 8px;
 }
-.input-wrapper__error{
+.input-wrapper__error {
   color: #b30000;
   font-size: 12px;
-  font-weight: bold;  
+  font-weight: bold;
   margin-top: 6px;
   pointer-events: none;
   transition: opacity 300ms ease-in-out;
   opacity: 0;
 }
-.input-wrapper__error-visible{
+.input-wrapper__error-visible {
   opacity: 1;
 }
-.input-wrapper__text2{
+.input-wrapper__text2 {
   margin-bottom: 8px;
   font-weight: bold;
   color: #414141;
   font-size: 16px;
   margin-bottom: 8px;
 }
-.input-wrapper__multiple-choices{
+.input-wrapper__multiple-choices {
   position: relative;
 }
-.multiple-choices{
+.multiple-choices {
   width: 100%;
   height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: solid 1px black;
+  border: solid 1px #414141;
   border-radius: 5px;
   background-color: transparent;
 }
-.selected-choice{
+.selected-choice {
   font-size: 16px;
   font-weight: bold;
   color: #1360a0;
   margin-left: 8px;
 }
-.arrow{
+.arrow {
   width: 18px;
   margin-right: 10px;
 }
-.arrow__up{
+.arrow__up {
   transform: rotate(180deg);
 }
-.input-wrapper__multiple-choices__menu{
+.input-wrapper__multiple-choices__menu {
   position: absolute;
   left: 0;
   top: 100%;
@@ -90,37 +90,36 @@ body{
   padding-left: 8px;
   box-shadow: 0 2px 3px black;
 }
-.input-wrapper__multiple-choices__menu__visible{
+.input-wrapper__multiple-choices__menu__visible {
   opacity: 1;
   pointer-events: auto;
 }
-.choice{
+.choice {
   width: 100%;
   height: 40px;
   display: flex;
   align-items: center;
   cursor: pointer;
 }
-.choice-selected{
+.choice-selected {
   font-weight: bold;
   color: #1360a0;
 }
-.wrapper-buttons{
+.wrapper-buttons {
   margin-top: 30px;
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.changePassword{
+.changePassword {
   color: #00447c;
   font-weight: bold;
   text-decoration: none;
 }
-#saveChanges{
+.saveChanges {
   background-color: #00447c;
   color: white;
   border-radius: 20px;
   padding: 12px 20px;
   cursor: pointer;
 }
-
